@@ -91,7 +91,7 @@ class _SaveMyVideoState extends State<SaveMyVideo> {
   void _recordVideo() async {
     ImagePicker()
         .getVideo(source: ImageSource.camera)
-        .then((PickedFile recordedVideo) {
+        .then((Pic  kedFile recordedVideo) {
       if (recordedVideo != null && recordedVideo.path != null) {
         setState(() {
           secondButtonText = 'saving in progress...';
