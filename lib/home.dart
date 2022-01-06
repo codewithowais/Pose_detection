@@ -1,5 +1,6 @@
 import 'package:aiapp/camera.dart';
 import 'package:aiapp/filter.dart';
+import 'package:aiapp/gallery.dart';
 import 'package:aiapp/posedetection.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -36,6 +37,15 @@ class _HomeState extends State<Home> {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Filter_page()),
+              );
+            },
+          ),
+          ElevatedButton(
+            child: const Text("Gallery"),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MainPage()),
               );
             },
           )
